@@ -3,7 +3,7 @@ export type Task = {
 	taskName: string,
 	description: string,
 	completed: Boolean,
-	dueDate: Date,
+	dueDate: string,
 }
 
 export type Field = {

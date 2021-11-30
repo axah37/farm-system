@@ -2,21 +2,16 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
+import { Field, Task } from '../model/model';
+import { BackendService } from '../backend.service';
 
-class Task {
-  constructor(public id: string = "1",
+class TaskModel {
+  constructor(
     public taskName: string = "",
     public description: string = "",
-    public fieldId: string = "",
     public completed: boolean = false,
     public dueDate: Date = new Date()) { }
 }
-
-interface Field {
-  id: string,
-  name: string,
-}
-
 @Component({
   selector: 'app-field-detail',
   templateUrl: './field-detail.component.html',
@@ -28,47 +23,68 @@ export class FieldDetailComponent implements OnInit {
   now = new Date();
 
   dataSource = new MatTableDataSource<Partial<Task>>();
-  tasks: Task[];
   field: Field;
   displayedColumns: string[] = ['name', 'description', "date", 'completed',];
-  model: Task = new Task();
+  model: TaskModel;
   @ViewChild("taskForm") taskForm: any;
 
 
 
-  constructor(private route: ActivatedRoute, private router: Router) {
-    this.field = { id: "", name: "" };
-    this.tasks = [];
-    this.dataSource.data = this.tasks;
+  constructor(private route: ActivatedRoute, private backend: BackendService) {
+    this.dataSource.data = [];
+    this.field = {id: "", title: "", coords: "", tasks: []}
+    this.model = new  TaskModel();
   }
 
   ngOnInit(): void {
-    this.field = { id: "id2", name: this.route.snapshot.params['title'] }
-    console.log(this.tasks)
+    const id = this.route.snapshot.params['id']
+    const title = this.route.snapshot.params['title']
+    this.fetchField(id)
   }
 
   onSubmit(form: NgForm) {
     if (form.valid) {
-      this.tasks.push({ ...this.model, id: "123", fieldId: this.field.id })
+      this.backend.addTask(this.field.id, this.model).subscribe({
+        next: (v) => { if (v.body !== null) this.fetchField(this.field.id) },
+        error: (e) => console.log(e),
+        complete: () => {
+          console.log("Completed adding task")
+          
+        }
+      })
 
       this.taskForm.reset()
       form.resetForm()
+
       this.model.dueDate = new Date()
-
-      this.dataSource.data = this.tasks
     }
   }
 
-  updateComplete(id: string) {
-    let i = this.tasks.findIndex((t) => {
-      return t.id === id
-    });
-
-    if (i === -1) {
-      console.error("Task not found")
-    } else {
-      this.tasks[i].completed = !this.tasks[i].completed;
-    }
+  private fetchField(id: string) {
+    this.backend.getFieldById(id).subscribe({
+      next: (v) => {
+        if (v.body === null) {
+          throw new Error("Field not found.")
+        }
+        console.log(v.body.tasks)
+        this.field = v.body
+        this.dataSource.data = []
+        this.dataSource.data = v.body.tasks
+      },
+      error: (e) => console.log(e),
+      complete: () => console.log("Completed")
+    })
   }
+  // updateComplete(id: string) {
+  //   let i = this.tasks.findIndex((t) => {
+  //     return t.id === id
+  //   });
+
+  //   if (i === -1) {
+  //     console.error("Task not found")
+  //   } else {
+  //     this.tasks[i].completed = !this.tasks[i].completed;
+  //   }
+  // }
 
 }

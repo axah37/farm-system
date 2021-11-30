@@ -18,9 +18,9 @@ export class HomepageComponent implements OnInit {
   constructor(private router: Router, private backend: BackendService) {
   }
 
-  goToFieldDetail(title: string) {
+  goToFieldDetail(title: string, id: string) {
     console.log(title)
-    this.router.navigate([`/field-detail/${title}`, { title: title }])
+    this.router.navigate([`/field-detail/${title}`, { title: title, id: id }])
   }
 
   ngOnInit(): void {

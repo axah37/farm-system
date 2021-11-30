@@ -1,4 +1,4 @@
 	<img src="assets/0001.jpg" usemap="#image-map">
     <map name="image-map">
-      <area *ngFor="let item of areas" shape="rect" coords={{item.coords}} (click)=goToFieldDetail(item.title)>
+      <area *ngFor="let item of areas" shape="rect" coords={{item.coords}} (click)='goToFieldDetail(item.title, item.id)'>
     </map>
