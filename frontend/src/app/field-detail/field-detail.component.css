@@ -94,3 +94,7 @@ h1 {
   margin: 2rem;
   font-size: 5rem;
 }
+
+.delete-column{
+  width: 50px;
+}

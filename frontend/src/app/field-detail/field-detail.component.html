@@ -115,6 +115,20 @@
 				</td>
 			</ng-container>
 
+			<ng-container matColumnDef="delete">
+				<th mat-header-cell *matHeaderCellDef class="delete-column"></th>
+				<td
+					mat-cell
+					*matCellDef="let element"
+					[ngClass]="{
+						done: element.completed,
+						overdue: now > element.dueDate
+					}"
+				>
+					<button mat-raised-button (click)="deleteTask(element.id)">Delete</button>
+				</td>
+			</ng-container>
+
 			<ng-container matColumnDef="date">
 				<th mat-header-cell *matHeaderCellDef>Due Date</th>
 				<td

@@ -66,5 +66,21 @@ export const updateTask: Handler = (req, res) => {
 	getConnection().write(fields)
 
 	return res.status(200).json({})
+}
 
+export const deleteTask: Handler = (req, res) => {
+	const field = getField(req.params.value)
+	field.tasks = field.tasks.filter((element) => {
+		return element.id != req.params.taskId
+	})
+
+	const fields = getConnection().get("fields").value().map((item) => {
+		if (item.id === field.id) {
+			return field
+		}
+		return item
+	})
+	getConnection().write(fields)
+
+	return res.status(200).json({})
 }

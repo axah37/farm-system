@@ -24,7 +24,7 @@ export class FieldDetailComponent implements OnInit {
 
   dataSource = new MatTableDataSource<Partial<Task>>();
   field: Field;
-  displayedColumns: string[] = ['name', 'description', "date", 'completed',];
+  displayedColumns: string[] = ['name', 'description', "date", 'completed', "delete"];
   model: TaskModel;
   @ViewChild("taskForm") taskForm: any;
 
@@ -66,7 +66,6 @@ export class FieldDetailComponent implements OnInit {
         if (v.body === null) {
           throw new Error("Field not found.")
         }
-        console.log(v.body.tasks)
         this.field = v.body
         this.dataSource.data = []
         this.dataSource.data = v.body.tasks
@@ -75,15 +74,21 @@ export class FieldDetailComponent implements OnInit {
       complete: () => console.log("Completed")
     })
   }
+
   updateComplete(element: Task) {
-    console.log(element)
     this.backend.updateTask(this.field.id, {...element, completed: !element.completed}).subscribe({
       next: (v) => { this.fetchField(this.field.id) },
       error: (e) => console.log(e),
       complete: () => console.log("Completed")
     })
+  }
 
-    console.log(this.field)
+  deleteTask(taskId: string){
+    this.backend.deleteTask(this.field.id, taskId).subscribe({
+      next: (v) => { this.fetchField(this.field.id)},
+      error:(e) => console.log(e),
+      complete: () => console.log("Completed")
+    })
   }
 
 }

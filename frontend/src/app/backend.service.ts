@@ -43,4 +43,8 @@ export class BackendService {
   updateTask(id: string, task: Task): Observable<HttpResponse<Task>> {
     return this.http.put<Task>(`http://localhost:3000/fields/${id}`, task, { observe: "response" })
   }
+
+  deleteTask(id: string, taskId: string): Observable<HttpResponse<any>> {
+    return this.http.delete<any>(`http://localhost:3000/fields/${id}/task/${taskId}`, { observe: "response" })
+  }
 }
