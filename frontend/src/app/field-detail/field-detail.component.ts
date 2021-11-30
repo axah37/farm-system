@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
 import { Field, Task } from '../model/model';
 import { BackendService } from '../backend.service';
+import { MatPaginator } from '@angular/material/paginator';
 
 class TaskModel {
   constructor(
@@ -18,7 +19,7 @@ class TaskModel {
   styleUrls: ['./field-detail.component.css']
 })
 
-export class FieldDetailComponent implements OnInit {
+export class FieldDetailComponent implements OnInit, AfterViewInit {
 
   now = new Date();
 
@@ -27,6 +28,9 @@ export class FieldDetailComponent implements OnInit {
   displayedColumns: string[] = ['name', 'description', "date", 'completed', "delete"];
   model: TaskModel;
   @ViewChild("taskForm") taskForm: any;
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
 
 
 
@@ -40,6 +44,10 @@ export class FieldDetailComponent implements OnInit {
     const id = this.route.snapshot.params['id']
     const title = this.route.snapshot.params['title']
     this.fetchField(id)
+  }
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
   }
 
   onSubmit(form: NgForm) {
