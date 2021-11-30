@@ -75,16 +75,15 @@ export class FieldDetailComponent implements OnInit {
       complete: () => console.log("Completed")
     })
   }
-  // updateComplete(id: string) {
-  //   let i = this.tasks.findIndex((t) => {
-  //     return t.id === id
-  //   });
+  updateComplete(element: Task) {
+    console.log(element)
+    this.backend.updateTask(this.field.id, {...element, completed: !element.completed}).subscribe({
+      next: (v) => { this.fetchField(this.field.id) },
+      error: (e) => console.log(e),
+      complete: () => console.log("Completed")
+    })
 
-  //   if (i === -1) {
-  //     console.error("Task not found")
-  //   } else {
-  //     this.tasks[i].completed = !this.tasks[i].completed;
-  //   }
-  // }
+    console.log(this.field)
+  }
 
 }

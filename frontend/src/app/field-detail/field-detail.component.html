@@ -110,6 +110,7 @@
 					<input
 						type="checkbox"
 						[checked]="element.completed"
+						(change)="updateComplete(element)"
 					/>
 				</td>
 			</ng-container>

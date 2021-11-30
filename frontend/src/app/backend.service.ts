@@ -39,4 +39,8 @@ export class BackendService {
   addTask(id: string, task: Task): Observable<HttpResponse<Task>> {
     return this.http.post<Task>(`http://localhost:3000/fields/${id}`, task, { observe: "response" })
   }
+
+  updateTask(id: string, task: Task): Observable<HttpResponse<Task>> {
+    return this.http.put<Task>(`http://localhost:3000/fields/${id}`, task, { observe: "response" })
+  }
 }
