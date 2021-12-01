@@ -14,6 +14,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { OverviewComponent } from './overview/overview.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon'
+
 
 
 @NgModule({
@@ -21,6 +25,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     AppComponent,
     FieldDetailComponent,
     HomepageComponent,
+    OverviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     HttpClientModule,
     MatPaginatorModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

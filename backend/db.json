@@ -4,13 +4,57 @@
       "id": "9c25d664-b218-4c78-9599-f5ed8cee2087",
       "title": "doogle1",
       "coords": "271,12,512,129",
-      "tasks": []
+      "tasks": [
+        {
+          "id": "a4242caf-9e28-437d-89c5-9c8bafdb4a7a",
+          "taskName": "dawddadad",
+          "description": "adadwdawd",
+          "completed": false,
+          "dueDate": "2021-11-02T06:00:00.000Z"
+        },
+        {
+          "id": "23fac4bf-7a46-4b86-8d49-adbebe80b646",
+          "taskName": "dadwad",
+          "description": "dwawddwad",
+          "dueDate": "2021-12-01T07:43:39.531Z",
+          "completed": false
+        },
+        {
+          "id": "e621cbab-2a00-42b1-bd19-67f41261d1ea",
+          "taskName": "daddd",
+          "description": "aawdwddwadw",
+          "dueDate": "2021-12-01T07:43:42.624Z",
+          "completed": false
+        },
+        {
+          "id": "81b6e3ce-582a-497e-ae4f-2714291fb273",
+          "taskName": "dwadawddw",
+          "description": "dawdawdawd",
+          "dueDate": "2021-12-01T07:43:48.570Z",
+          "completed": false
+        },
+        {
+          "id": "d35f6e5e-62b0-424e-b92c-3f8d3aa7c557",
+          "taskName": "dawaddada",
+          "description": "addaddwa",
+          "dueDate": "2021-12-01T07:43:50.679Z",
+          "completed": true
+        }
+      ]
     },
     {
       "id": "a272304c-9181-4431-839f-ffc490c1f9b6",
       "title": "doogle2",
       "coords": "509,203,275,150,514,150",
-      "tasks": []
+      "tasks": [
+        {
+          "id": "f3e95ca9-01a9-400a-9e25-324892097404",
+          "taskName": "dwdawdawddawdw",
+          "description": "dawddadaddwad",
+          "dueDate": "2021-12-01T07:06:30.888Z",
+          "completed": true
+        }
+      ]
     },
     {
       "id": "91fb3cc0-879d-49f4-b115-e11aad131041",

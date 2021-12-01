@@ -8,6 +8,7 @@ import { MatPaginator } from '@angular/material/paginator';
 
 class TaskModel {
   constructor(
+    public id: string = "0",
     public taskName: string = "",
     public description: string = "",
     public completed: boolean = false,
@@ -20,8 +21,6 @@ class TaskModel {
 })
 
 export class FieldDetailComponent implements OnInit, AfterViewInit {
-
-  now = new Date();
 
   dataSource = new MatTableDataSource<Partial<Task>>();
   field: Field;
@@ -97,6 +96,11 @@ export class FieldDetailComponent implements OnInit, AfterViewInit {
       error:(e) => console.log(e),
       complete: () => console.log("Completed")
     })
+  }
+
+  isOverdue(dueDate: string){
+    const date = new Date(dueDate).getTime()
+    return new Date().getTime() - (24 * 60 * 60 * 1000) > date
   }
 
 }
