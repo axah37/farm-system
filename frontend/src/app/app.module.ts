@@ -16,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { OverviewComponent } from './overview/overview.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { TaskTableComponent } from './task-table/task-table.component'
 
 
 
@@ -26,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon'
     FieldDetailComponent,
     HomepageComponent,
     OverviewComponent,
+    TaskTableComponent,
   ],
   imports: [
     BrowserModule,

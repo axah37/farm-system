@@ -1,10 +1,8 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
-import { MatTableDataSource } from '@angular/material/table';
-import { Field, Task } from '../model/model';
+import { ActivatedRoute } from '@angular/router';
 import { BackendService } from '../backend.service';
-import { MatPaginator } from '@angular/material/paginator';
+import { TaskTableComponent } from '../task-table/task-table.component';
 
 class TaskModel {
   constructor(
@@ -20,39 +18,28 @@ class TaskModel {
   styleUrls: ['./field-detail.component.css']
 })
 
-export class FieldDetailComponent implements OnInit, AfterViewInit {
+export class FieldDetailComponent implements OnInit {
 
-  dataSource = new MatTableDataSource<Partial<Task>>();
-  field: Field;
-  displayedColumns: string[] = ['name', 'description', "date", 'completed', "delete"];
-  model: TaskModel;
+  title!: string
+  id!: string
+  model!: TaskModel;
   @ViewChild("taskForm") taskForm: any;
-  @ViewChild(MatPaginator)
-  paginator!: MatPaginator;
-
-
-
+  @ViewChild(TaskTableComponent)
+  tableComponent !: TaskTableComponent
 
   constructor(private route: ActivatedRoute, private backend: BackendService) {
-    this.dataSource.data = [];
-    this.field = {id: "", title: "", coords: "", tasks: []}
     this.model = new  TaskModel();
   }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.params['id']
-    const title = this.route.snapshot.params['title']
-    this.fetchField(id)
-  }
-
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    this.id = this.route.snapshot.params['id']
+    this.title = this.route.snapshot.params['title']
   }
 
   onSubmit(form: NgForm) {
     if (form.valid) {
-      this.backend.addTask(this.field.id, this.model).subscribe({
-        next: (v) => { if (v.body !== null) this.fetchField(this.field.id) },
+      this.backend.addTask(this.id, this.model).subscribe({
+        next: (v) => { this.tableComponent.getTasks() },
         error: (e) => console.log(e),
         complete: () => {
           console.log("Completed adding task")
@@ -66,41 +53,4 @@ export class FieldDetailComponent implements OnInit, AfterViewInit {
       this.model.dueDate = new Date()
     }
   }
-
-  private fetchField(id: string) {
-    this.backend.getFieldById(id).subscribe({
-      next: (v) => {
-        if (v.body === null) {
-          throw new Error("Field not found.")
-        }
-        this.field = v.body
-        this.dataSource.data = []
-        this.dataSource.data = v.body.tasks
-      },
-      error: (e) => console.log(e),
-      complete: () => console.log("Completed")
-    })
-  }
-
-  updateComplete(element: Task) {
-    this.backend.updateTask(this.field.id, {...element, completed: !element.completed}).subscribe({
-      next: (v) => { this.fetchField(this.field.id) },
-      error: (e) => console.log(e),
-      complete: () => console.log("Completed")
-    })
-  }
-
-  deleteTask(taskId: string){
-    this.backend.deleteTask(this.field.id, taskId).subscribe({
-      next: (v) => { this.fetchField(this.field.id)},
-      error:(e) => console.log(e),
-      complete: () => console.log("Completed")
-    })
-  }
-
-  isOverdue(dueDate: string){
-    const date = new Date(dueDate).getTime()
-    return new Date().getTime() - (24 * 60 * 60 * 1000) > date
-  }
-
 }

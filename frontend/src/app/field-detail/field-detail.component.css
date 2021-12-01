@@ -1,13 +1,6 @@
-:host {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .wrapper {
 	width: 100%;
   max-width: 100%;
-
 }
 
 .main-content {
@@ -15,48 +8,6 @@
 	width: 80%;
   max-width: 80%;
 	margin: auto;
-}
-
-.task-table {
-	width: 100%;
-}
-
-.mat-column-name {
-  width: 20%;
-  word-wrap: break-word;
-  word-break: break-all;
-  padding: 1rem;
-}
-
-.mat-column-completed {
-	text-align: center;
-  width: 10%;
-}
-
-.mat-column-decription {
-	text-align: center;
-  word-wrap: break-word;
-  word-break: break-all;
-  width: 60%;
-}
-
-.mat-column-date {
-	text-align: center;
-  width: 10%;
-}
-
-.overdue {
-  background-color: red;
-}
-
-.done {
-  background-color: green;
-  text-decoration: line-through;
-}
-
-.mat-header-cell {
-  font-weight: bold;
-  font-size: 1.25rem;
 }
 
 .task-input {
@@ -93,8 +44,4 @@ h1 {
   text-align: center;
   margin: 2rem;
   font-size: 5rem;
-}
-
-.delete-column{
-  width: 50px;
 }
