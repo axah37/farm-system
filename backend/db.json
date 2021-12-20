@@ -1,371 +1,327 @@
 {
   "fields": [
     {
-      "id": "9c25d664-b218-4c78-9599-f5ed8cee2087",
+      "id": "aef6da04-2097-4c6f-a6e8-e1edb687cf76",
       "title": "doogle1",
-      "coords": "271,12,512,129",
-      "tasks": [
-        {
-          "id": "23fac4bf-7a46-4b86-8d49-adbebe80b646",
-          "taskName": "dadwad",
-          "description": "dwawddwad",
-          "dueDate": "2021-12-01T07:43:39.531Z",
-          "completed": true
-        },
-        {
-          "id": "d35f6e5e-62b0-424e-b92c-3f8d3aa7c557",
-          "taskName": "dawaddada",
-          "description": "addaddwa",
-          "dueDate": "2021-12-01T07:43:50.679Z",
-          "completed": true
-        },
-        {
-          "id": "a93f2a5d-a214-427d-8d71-9a0d87f99bab",
-          "taskName": "dadawddawda",
-          "description": "dadwdawdwaddawd",
-          "dueDate": "2021-12-01T08:34:01.604Z",
-          "completed": false
-        },
-        {
-          "id": "e45443f5-e906-4737-ae8f-955892ac99db",
-          "taskName": "sssssssssssssssssssssssssssssssssss",
-          "description": "xbcvdds",
-          "dueDate": "2021-12-01T08:37:48.322Z",
-          "completed": false
-        },
-        {
-          "id": "8401a50f-45a7-46db-8bbf-66c90ee178e3",
-          "taskName": "dadad",
-          "description": "daaddaa",
-          "completed": false,
-          "dueDate": "2021-12-18T03:05:06.657Z"
-        }
-      ]
+      "coords": "1154,318,1074,202",
+      "tasks": []
     },
     {
-      "id": "a272304c-9181-4431-839f-ffc490c1f9b6",
+      "id": "429056ed-032d-4190-bc85-a5c620459f89",
       "title": "doogle2",
-      "coords": "509,203,275,150,514,150",
-      "tasks": [
-        {
-          "id": "058bd066-a522-4195-a15b-4b79cc198cc6",
-          "taskName": "dawddad",
-          "description": "ddawdadd",
-          "completed": false,
-          "dueDate": "2021-12-01T08:25:17.498Z"
-        }
-      ]
+      "coords": "1246,316,1169,202",
+      "tasks": []
     },
     {
-      "id": "91fb3cc0-879d-49f4-b115-e11aad131041",
+      "id": "53fe4d56-44b2-4394-b571-d22325539623",
       "title": "doogle3",
-      "coords": "271,225,511,283",
+      "coords": "1414,320,1269,202",
       "tasks": []
     },
     {
-      "id": "f512e067-a737-48c5-9903-551b506e2ebf",
+      "id": "fda214aa-c30c-47ab-aaa3-39fa886d0d08",
       "title": "sool3",
-      "coords": "553,12,638,125",
+      "coords": "1414,380,1271,338",
       "tasks": []
     },
     {
-      "id": "2a7b5843-e2dd-497e-bc1e-9838f02e874b",
+      "id": "a931dbda-12e3-4735-ad97-f5a1e36e481b",
       "title": "sool2",
-      "coords": "553,148,638,201",
+      "coords": "1247,380,1175,336",
       "tasks": []
     },
     {
-      "id": "83291dc5-ccb0-44b1-a70f-1e3fac7bcd41",
+      "id": "1eaf9e0f-3ab6-4e7c-9583-b2b082506ec5",
       "title": "sool1",
-      "coords": "553,225,639,279",
+      "coords": "1150,382,1078,338",
       "tasks": []
     },
     {
-      "id": "038d5ee6-5d32-4582-b952-7dc53aa26b66",
+      "id": "b6f9c800-345e-4420-acef-e1121d0f261f",
       "title": "2x2",
-      "coords": "779,14,892,281",
+      "coords": "1416,502,1076,444",
       "tasks": []
     },
     {
-      "id": "5b97db5c-7396-42ac-81d2-d025d8b8a0d1",
+      "id": "f1412b84-561b-4044-b372-db164230e4a9",
       "title": "madh1",
-      "coords": "943,15,1053,85",
+      "coords": "1417,582,1318,521",
       "tasks": []
     },
     {
-      "id": "d7930039-ac0c-4113-864a-241211fa419d",
+      "id": "058a028a-7bb6-499c-93da-0569008ccced",
       "title": "madh2",
-      "coords": "935,110,1050,181",
+      "coords": "1298,582,1199,521",
       "tasks": []
     },
     {
-      "id": "0793dd1a-77cc-4ecf-a760-9a299a2d4202",
+      "id": "c1cfd2cd-6c57-407d-b4f5-cf6fede3cfd5",
       "title": "waamo",
-      "coords": "936,210,1053,280",
+      "coords": "1175,582,1076,521",
       "tasks": []
     },
     {
-      "id": "b5b5a30c-9da9-44ff-8b30-ff50108d8f08",
+      "id": "71f1b325-11f9-44b9-8a1a-d05e9ea5d7d3",
       "title": "tij1",
-      "coords": "1108,13,1223,84",
+      "coords": "1415,664,1316,603",
       "tasks": []
     },
     {
-      "id": "f4de05e9-3437-4e71-8929-668ce6ead12d",
+      "id": "43d64556-ce5f-43e5-a1ea-09134a371c6f",
       "title": "tij2",
-      "coords": "1104,111,1223,179",
+      "coords": "1295,662,1196,601",
       "tasks": []
     },
     {
-      "id": "d0757c85-63f7-4d81-a2c3-1be5e74ed8f4",
+      "id": "c71f007b-7445-463b-91e5-c43bdc87bb5e",
       "title": "tij3",
-      "coords": "1106,208,1223,282",
+      "coords": "1174,662,1075,601",
       "tasks": []
     },
     {
-      "id": "546f5e78-e802-4abc-8ed2-457df85e6320",
+      "id": "15d65a54-bdd7-4f3a-9cce-159ac905f24c",
       "title": "jir1",
-      "coords": "273,564,390,635",
+      "coords": "734,261,636,202",
       "tasks": []
     },
     {
-      "id": "9e069577-b279-458f-ae06-1732bd4e40c0",
+      "id": "652d6a23-4c1a-459d-b166-6adb59eb908a",
       "title": "jir2",
-      "coords": "275,316,390,516",
+      "coords": "1041,259,787,202",
       "tasks": []
     },
     {
-      "id": "cf195b7f-07a3-4708-b0ad-9fc20fb81397",
+      "id": "0af88be5-dffc-49a6-acca-e5d80734eeac",
       "title": "shar1",
-      "coords": "444,462,563,511",
+      "coords": "861,349,790,282",
       "tasks": []
     },
     {
-      "id": "91442bf2-b358-46ef-88b6-c3e29b10d0da",
+      "id": "9f9a5d94-9f10-4f1b-8a30-907efa044f4c",
       "title": "shar2",
-      "coords": "441,391,561,437",
+      "coords": "950,347,879,280",
       "tasks": []
     },
     {
-      "id": "bbaaa0f6-3a0d-48d4-8e0f-e59cd04e3d9c",
+      "id": "80a71d18-73e0-44a2-a204-d956596bb665",
       "title": "shar3",
-      "coords": "443,315,561,365",
+      "coords": "1040,349,969,282",
       "tasks": []
     },
     {
-      "id": "496474f4-b608-4746-852f-ad7cf98f9218",
+      "id": "d8ec54d3-3a80-4c7d-82ea-5993d895dece",
       "title": "isol1",
-      "coords": "604,565,723,635",
+      "coords": "734,418,637,362",
       "tasks": []
     },
     {
-      "id": "9238e1c4-68e7-4909-b2e0-c080e87c6807",
+      "id": "007516f4-56d9-471a-aedc-aa3f38341fbb",
       "title": "isol2",
-      "coords": "606,440,724,513",
+      "coords": "892,421,791,359",
       "tasks": []
     },
     {
-      "id": "dc1a73bd-f39c-4bf6-83cd-2c13dfd63338",
+      "id": "9cdb73c8-f099-4841-a495-a81029e657cf",
       "title": "isol3",
-      "coords": "604,316,723,401",
+      "coords": "1040,422,928,362",
       "tasks": []
     },
     {
-      "id": "58f689d8-ca59-4b75-a184-634c6d2f0c5d",
+      "id": "f6ef5c7e-fc48-4a98-b7d8-d7e210a367ca",
       "title": "rob1",
-      "coords": "773,315,896,404",
+      "coords": "1042,504,930,444",
       "tasks": []
     },
     {
-      "id": "65312439-66a4-4737-ae3c-ae5dd88c69d2",
+      "id": "0e590335-c7ec-4cd2-bc36-a27bbb11f404",
       "title": "rob2",
-      "coords": "935,316,1053,401",
+      "coords": "1040,581,928,521",
       "tasks": []
     },
     {
-      "id": "4f44423b-b19b-4250-a369-2a46b2f83954",
+      "id": "7c84dd55-4373-43b0-b657-f355107da07b",
       "title": "rob3",
-      "coords": "1099,316,1221,403",
+      "coords": "1042,661,930,601",
       "tasks": []
     },
     {
-      "id": "346af3b8-02e9-4c1f-9e56-4ed3a3d81674",
+      "id": "c1422a68-e5e1-44c0-a9a7-30a86198a96b",
       "title": "d1",
-      "coords": "773,438,894,513",
+      "coords": "890,502,790,443",
       "tasks": []
     },
     {
-      "id": "72ba973a-ef6f-4345-8517-f044006f2643",
+      "id": "05356a29-346a-4828-9d0b-3d50cab1e012",
       "title": "d2",
-      "coords": "933,438,1055,513",
+      "coords": "892,580,792,521",
       "tasks": []
     },
     {
-      "id": "018de459-3f3b-401a-973e-eabfa7bf4ab4",
+      "id": "9a94accb-fd3e-4145-a55b-30477be243e7",
       "title": "d3",
-      "coords": "1101,438,1220,511",
+      "coords": "892,659,792,600",
       "tasks": []
     },
     {
-      "id": "accecc15-1293-4365-8831-ee1fb22b0470",
+      "id": "f5a3eae6-d6c4-4c43-9e5e-e2cee4cd2d0a",
       "title": "taw1",
-      "coords": "273,664,390,828",
+      "coords": "614,261,403,201",
       "tasks": []
     },
     {
-      "id": "e0019c55-3a18-4ad7-bedb-6d05220134b5",
+      "id": "3747e9b1-4f19-418c-aee4-7cc8998cc185",
       "title": "taw2",
-      "coords": "271,854,393,1018",
+      "coords": "375,261,167,201",
       "tasks": []
     },
     {
-      "id": "4fe1ce50-dbdb-451d-9681-5cab92c59431",
+      "id": "0a4fe6c9-b87a-4751-9c67-72cc8da28524",
       "title": "zaiir1",
-      "coords": "443,662,561,735",
+      "coords": "618,345,514,282",
       "tasks": []
     },
     {
-      "id": "e02fdb71-7344-4eba-9ca8-771763460856",
+      "id": "30335a8e-d710-46a0-91ad-5cbdac5e930d",
       "title": "zaiir2",
-      "coords": "443,564,561,635",
+      "coords": "738,343,634,280",
       "tasks": []
     },
     {
-      "id": "0d5bb89e-96ee-4dc4-8a85-ccf3ea658c65",
+      "id": "40a587fd-23ff-479b-9579-e95b96a8317b",
       "title": "suw1",
-      "coords": "604,857,724,930",
+      "coords": "375,422,273,360",
       "tasks": []
     },
     {
-      "id": "1c6efc88-58f2-409b-b6da-108d267402bc",
+      "id": "48737a5d-5ddd-4f9a-ad89-917f002783cc",
       "title": "suw2",
-      "coords": "602,760,723,832",
+      "coords": "493,418,396,362",
       "tasks": []
     },
     {
-      "id": "328d86bf-07b4-4103-a720-38f23ff78ae9",
+      "id": "a21cf0f1-43da-45e9-ab49-59f904b853e3",
       "title": "suw3",
-      "coords": "602,662,723,735",
+      "coords": "615,418,518,362",
       "tasks": []
     },
     {
-      "id": "7f6b0b81-88fb-49c3-bf4b-cfe06d65696e",
+      "id": "b9b2397c-3940-4118-93fd-9830b51940b4",
       "title": "suw0",
-      "coords": "602,954,723,1020",
+      "coords": "253,420,163,356",
       "tasks": []
     },
     {
-      "id": "81cf2f3a-8781-4331-a4c4-b32087074be9",
+      "id": "5064f7c8-3d88-4abd-8747-b88ef6262077",
       "title": "c1",
-      "coords": "772,564,894,638",
+      "coords": "737,503,638,443",
       "tasks": []
     },
     {
-      "id": "19e8c678-6dd2-4ef8-95bb-4a2f348292e4",
+      "id": "9a81f199-b9f0-49a1-b096-68801779c10f",
       "title": "c2",
-      "coords": "773,662,894,735",
+      "coords": "616,503,517,443",
       "tasks": []
     },
     {
-      "id": "ee3e05ee-9552-4fc2-891e-bc50e57c856a",
+      "id": "a3e04a27-aa6f-479f-9b13-95f26a72cce1",
       "title": "c3",
-      "coords": "772,759,892,832",
+      "coords": "494,503,395,443",
       "tasks": []
     },
     {
-      "id": "5e8f0721-a1bd-4b3d-b64b-5bd7eec1cbf0",
+      "id": "058a696a-d6ed-4b29-983c-d21c608e72eb",
       "title": "c4",
-      "coords": "772,857,894,932",
+      "coords": "373,503,274,443",
       "tasks": []
     },
     {
-      "id": "794edfa1-b311-4934-bf47-e8066d9fb5f6",
+      "id": "e092fa27-302b-47c9-9034-8ebd0be3e05c",
       "title": "bjini",
-      "coords": "772,954,894,1016",
+      "coords": "253,503,169,443",
       "tasks": []
     },
     {
-      "id": "57851555-a9cd-43c8-b272-70efa470544c",
+      "id": "95ec95f3-6059-40f2-9813-89b614cc44cd",
       "title": "1b",
-      "coords": "935,565,1057,638",
+      "coords": "735,581,636,521",
       "tasks": []
     },
     {
-      "id": "e3aac9fb-cfa4-41ec-9678-e75f403d57d5",
+      "id": "513378ee-a8db-4fdd-85ee-c80c7703f51f",
       "title": "2b",
-      "coords": "935,662,1055,735",
+      "coords": "615,579,516,519",
       "tasks": []
     },
     {
-      "id": "780e83e1-0837-42be-9a0f-83db6027257a",
+      "id": "fec61348-7d6a-463a-8e9e-f03184b69864",
       "title": "3b",
-      "coords": "936,760,1053,835",
+      "coords": "495,581,396,521",
       "tasks": []
     },
     {
-      "id": "dab8d739-d9e9-450e-a61a-395d646b0526",
+      "id": "a9f9fb90-666d-478a-b7e7-89c48e99a5a5",
       "title": "4b",
-      "coords": "936,857,1053,930",
+      "coords": "373,579,274,519",
       "tasks": []
     },
     {
-      "id": "989c9803-a89c-4e1a-b759-56d2ea63548f",
+      "id": "1813e8b1-f33a-4fe2-8352-bf83f4a4dc27",
       "title": "5b",
-      "coords": "938,954,1060,1015",
+      "coords": "255,579,171,521",
       "tasks": []
     },
     {
-      "id": "de66114c-edb8-4245-b7b1-178b7f533664",
+      "id": "4b659d59-970d-454b-a16c-bfdfd68095c2",
       "title": "1a",
-      "coords": "1099,564,1221,638",
+      "coords": "735,662,636,602",
       "tasks": []
     },
     {
-      "id": "80b38d54-f5b6-4f64-b8a5-98927e79ce6a",
+      "id": "26906d01-8a40-48d0-8ebe-ccb77c400c1c",
       "title": "2a",
-      "coords": "1099,662,1221,733",
+      "coords": "615,660,516,600",
       "tasks": []
     },
     {
-      "id": "df0f96d8-32a7-4701-b2f4-f964987a6073",
+      "id": "e7e1ca9b-2ea4-4332-b6c0-c76f9cdace08",
       "title": "3a",
-      "coords": "1101,759,1220,833",
+      "coords": "496,660,397,600",
       "tasks": []
     },
     {
-      "id": "928529c9-7f46-447b-9ddd-5fde8542f728",
+      "id": "005506a0-04f5-4634-bc55-0f49cc3cb6a1",
       "title": "4a",
-      "coords": "1099,857,1221,1010",
+      "coords": "373,660,173,599",
       "tasks": []
     },
     {
-      "id": "d0c05063-43a7-431a-973c-a01e286714b3",
+      "id": "6f446c53-6eed-4d36-83ec-dafc2c063857",
       "title": "bag1",
-      "coords": "1294,564,1416,637",
+      "coords": "734,757,636,692",
       "tasks": []
     },
     {
-      "id": "ce9bb373-47aa-44e2-9a2b-07fe40386084",
+      "id": "9c13a832-5abd-45cb-8f20-e77049114cc6",
       "title": "bag2",
-      "coords": "1457,564,1577,638",
+      "coords": "734,830,635,770",
       "tasks": []
     },
     {
-      "id": "c432b955-6c28-4a58-bdd2-62fa27b12253",
+      "id": "9e193e16-7c5a-42dd-ba5c-e2af8b745ca7",
       "title": "bag3",
-      "coords": "1618,564,1740,637",
+      "coords": "734,914,633,850",
       "tasks": []
     },
     {
-      "id": "100033f8-98a3-4133-af89-b31b7ef41651",
+      "id": "bcec3643-763c-4138-8780-e2669549d591",
       "title": "baxreyn",
-      "coords": "441,762,563,925",
+      "coords": "493,343,282,283",
       "tasks": []
     },
     {
-      "id": "dbe4acd8-969c-4ceb-817f-88a79965c389",
+      "id": "3f0b6d82-cd7b-4870-baa3-f4fb363aee77",
       "title": "malindi",
-      "coords": "441,949,563,1016",
+      "coords": "261,345,169,280",
       "tasks": []
     }
   ]
